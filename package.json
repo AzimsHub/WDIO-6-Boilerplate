@@ -4,7 +4,8 @@
   "description": "Description of this",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "npx wdio wdio.conf.js",
+    "hello": "node test.js && node test2.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-export-default-from": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/register": "^7.12.13",
     "@wdio/cli": "^6.12.1",
@@ -36,5 +38,8 @@
     "chai": "^4.2.0",
     "chromedriver": "^88.0.0",
     "wdio-chromedriver-service": "^6.0.4"
+  },
+  "dependencies": {
+    "broken-link-checker": "^0.7.8"
   }
 }
